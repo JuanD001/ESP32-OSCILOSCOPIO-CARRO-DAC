@@ -64,9 +64,9 @@ esp32-osciloscopio-carro-dac/
 ├── README.md
 ├── src/
 │   └── esp32/
-│       └── dibujo_carro_dac.ino     ← código original (renombrado desde PARCIAL_MICROS.ino)
+│       └── DIBUJO_CARRO_DAC.ino     ← código original
 ├── simulacion/
-│   └── preview.html                  ← simulador visual en el navegador (sin hardware)
+│   └── simulacion.html                  ← simulador visual en el navegador (sin hardware)
 └── img/
     └── resultado-osciloscopio.jpeg   ← foto real del carro dibujado en el osciloscopio
 ```
@@ -75,7 +75,7 @@ esp32-osciloscopio-carro-dac/
 
 ## Cómo probarlo
 
-1. Carga `src/esp32/dibujo_carro_dac.ino` al ESP32 desde el Arduino IDE (placa: **ESP32 Dev Module**).
+1. Carga `src/esp32/DIBUJO_CARRO_DAC.ino` al ESP32 desde el Arduino IDE (placa: **ESP32 Dev Module**).
 2. Conecta la punta del **CH1** del osciloscopio a **GPIO25**, y la del **CH2** a **GPIO26**. Conecta también el GND del osciloscopio al GND del ESP32.
 3. En el osciloscopio, cambia el modo de visualización de **tiempo/voltaje (Y-T)** a **XY**.
 4. Ajusta la escala a **1 V/div** en ambos canales (el DAC del ESP32 trabaja en un rango de 0–3.3 V).
@@ -87,7 +87,7 @@ Si el dibujo se ve inestable o parpadea demasiado, ajusta la constante `DELAY_PU
 
 ## Simulación en el navegador
 
-Como no todos tienen un osciloscopio físico a la mano, el repositorio incluye [`simulacion/preview.html`](simulacion/preview.html): una página web independiente que reproduce visualmente el mismo recorrido de puntos que el ESP32 enviaría al osciloscopio, dibujando el carro sobre una retícula estilo osciloscopio (con controles de pausa y limpieza).
+Como no todos tienen un osciloscopio físico a la mano, el repositorio incluye [`simulacion/simulacion.html`](simulacion/preview.html): una página web independiente que reproduce visualmente el mismo recorrido de puntos que el ESP32 enviaría al osciloscopio, dibujando el carro sobre una retícula estilo osciloscopio (con controles de pausa y limpieza).
 
 Para usarla, simplemente abre el archivo `preview.html` en cualquier navegador — no requiere instalar nada ni tener el ESP32 conectado.
 
