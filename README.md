@@ -87,9 +87,9 @@ Si el dibujo se ve inestable o parpadea demasiado, ajusta la constante `DELAY_PU
 
 ## Simulación en el navegador
 
-Como no todos tienen un osciloscopio físico a la mano, el repositorio incluye [`simulacion/simulacion.html`](simulacion/preview.html): una página web independiente que reproduce visualmente el mismo recorrido de puntos que el ESP32 enviaría al osciloscopio, dibujando el carro sobre una retícula estilo osciloscopio (con controles de pausa y limpieza).
+Como no todos tienen un osciloscopio físico a la mano, el repositorio incluye [`simulacion/simulacion.html`](simulacion/simulacion.html): una página web independiente que reproduce visualmente el mismo recorrido de puntos que el ESP32 enviaría al osciloscopio, dibujando el carro sobre una retícula estilo osciloscopio (con controles de pausa y limpieza).
 
-Para usarla, simplemente abre el archivo `preview.html` en cualquier navegador — no requiere instalar nada ni tener el ESP32 conectado.
+Para usarla, simplemente abre el archivo `simulacion.html` en cualquier navegador — no requiere instalar nada ni tener el ESP32 conectado.
 
 > Esta simulación es solo una ayuda visual para entender el proyecto sin hardware; el comportamiento real en el osciloscopio (brillo, persistencia, ruido de la señal) puede lucir distinto, como se aprecia en la foto de la sección anterior.
 
